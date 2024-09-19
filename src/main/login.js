@@ -1,14 +1,15 @@
-// src/components/Login.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { auth } from "./firebase"; // Import your Firebase configuration
 import { signInWithEmailAndPassword } from "firebase/auth";
-import './login.css'
+import './login.css'; // The CSS for styling
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -17,46 +18,63 @@ function Login() {
       await signInWithEmailAndPassword(auth, email, password);
       navigate("/home"); 
     } catch (err) {
-      setError(err.message);
+      setError("Invalid email or password. Please try again.");
     }
   };
 
   const handleSignupRedirect = () => {
-    navigate("Signup"); // Redirect to the signup page
+    navigate("/signup"); // Redirect to the signup page
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevShowPassword) => !prevShowPassword);
   };
 
   return (
     <div className="login-container">
-      <form className="login-form" onSubmit={handleLogin}>
-        <h2>Login</h2>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="input-field"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="input-field"
-        />
-        <button type="submit" className="login-button">
-          Login
-        </button>
-        {error && <p className="error-message">{error}</p>}
+      <div className="login-box">
+        <h2>Welcome Back!</h2>
+        <p className="subtitle">Login to your account</p>
+        <form className="login-form" onSubmit={handleLogin}>
+          <div className="input-group">
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="input-field"
+              required
+            />
+          </div>
+          <div className="input-group password-group">
+            <input
+              type={showPassword ? "text" : "password"} // Conditionally change input type
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="input-field"
+              required
+            />
+            {/* Add the eye icon */}
+            <i
+              className={`fas ${showPassword ? "fa-eye-slash" : "fa-eye"} toggle-password-icon`}
+              onClick={togglePasswordVisibility}
+            />
+          </div>
+          {error && <p className="error-message">{error}</p>}
+          <button type="submit" className="login-button">Login</button>
+        </form>
 
-        {/* Add the "or" text and Signup button */}
         <div className="divider-or">
           <p>or</p>
         </div>
 
         <button type="button" className="signup-button" onClick={handleSignupRedirect}>
-          Signup
+          Create an Account
         </button>
-      </form>
+
+        
+      </div>
     </div>
   );
 }
