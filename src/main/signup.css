@@ -6,8 +6,7 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #E0EAFC, #CFDEF3); /* Modern gradient */
-    height: 100vh;
+     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +25,7 @@
   }
   
   .login-box {
-    background-color: #ffffff;
+    background-color: blur;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -37,12 +36,12 @@
   h2 {
     margin-bottom: 10px;
     font-size: 24px;
-    color: #333;
+    color: white;
   }
   
   .subtitle {
     font-size: 14px;
-    color: #777;
+    color: black;
     margin-bottom: 20px;
   }
   
@@ -65,19 +64,20 @@
     padding-right: 40px; /* Space for the icon */
   }
   
-  .signup-button {
+  .signup-buttons {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    border-radius: 100px;
+    background: linear-gradient(to right, #13d4ff,#e7942f);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
   }
   
-  .signup-button:hover {
-    background-color: #0056b3;
+  .signup-buttons:hover {
+    background: linear-gradient(to right, #e7942f,#13d4ff);
   }
   
   .forgot-password {
@@ -85,7 +85,7 @@
   }
   
   .forgot-password a {
-    color: #007bff;
+    color: white;
     text-decoration: none;
     font-size: 14px;
   }
@@ -105,11 +105,9 @@
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: #007bff;
+   
     cursor: pointer;
   }
   
-  .toggle-password-icons:hover {
-    color: #0056b3;
-  }
+ 
   

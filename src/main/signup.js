@@ -58,7 +58,7 @@ function Signup() {
             />
           </div>
           {error && <p className="error-message">{error}</p>}
-          <button type="submit" className="signup-button">Sign Up</button>
+          <button type="submit" className="signup-buttons">Sign Up</button>
         </form>
         <div className="forgot-password">
           <a href="/">Already have an account? Login</a>
