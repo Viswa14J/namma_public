@@ -1,113 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+
   
-  body {
-    font-family: 'Arial', sans-serif;
-     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
+.container2{
+  display: flex;
+  background-image: url("../Assets/design.png");
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
 
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-  }
-  .input-fields:focus {
-    outline: none;
-    border-color: #007bff; /* Highlight color on focus */
-  }
-  
-  .login-box {
-    background-color: blur;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    text-align: center;
-  }
-  
-  h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
-    color: white;
-  }
-  
-  .subtitle {
-    font-size: 14px;
-    color: black;
-    margin-bottom: 20px;
-  }
-  
-  .login-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .input-group {
-    position: relative; /* Important for icon positioning */
-    margin-bottom: 15px;
-  }
-  
-  .input-fields{
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    padding-right: 40px; /* Space for the icon */
-  }
-  
-  .signup-buttons {
-    width: 100%;
-    padding: 10px;
-    border-radius: 100px;
-    background: linear-gradient(to right, #13d4ff,#e7942f);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .signup-buttons:hover {
-    background: linear-gradient(to right, #e7942f,#13d4ff);
-  }
-  
-  .forgot-password {
-    margin-top: 10px;
-  }
-  
-  .forgot-password a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .forgot-password a:hover {
-    text-decoration: underline;
-  }
-  
-  .error-message {
-    color: red;
-    margin-bottom: 15px;
-    font-size: 14px;
-  }
-  
-  .toggle-password-icons {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-   
-    cursor: pointer;
-  }
-  
- 
-  
+.input-fields:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+}
+
+.login-box {
+   /* Change to solid color */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333; /* Darker color for contrast */
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555; /* Slightly lighter color for subtitling */
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  position: relative; /* Important for icon positioning */
+  margin-bottom: 15px;
+}
+
+.input-fields {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  padding-right: 40px; /* Space for the icon */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.signup-buttons {
+  width: 100%;
+  padding: 10px;
+  border-radius: 100px;
+  background: linear-gradient(to right, #13d4ff, #e7942f);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s; /* Smooth transition for hover */
+}
+
+.signup-buttons:hover {
+  background: linear-gradient(to right, #e7942f, #13d4ff);
+}
+
+.forgot-password {
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: #007bff; /* Change link color */
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.toggle-password-icons {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
