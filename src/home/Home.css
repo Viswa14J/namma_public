@@ -1,0 +1,86 @@
+/* Home.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("/public/assets/images/temple.jpeg");/* Modern gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.container {
+    padding: 20px;
+    text-align: center;
+    /* Modern gradient */
+    
+    
+}
+
+.searchBox {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cardContainer {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* This will help with responsiveness */
+    justify-content: center;
+}
+
+
+.card {
+    background-color: #fff;
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.cardContent {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Add hover effect for cards */
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+}
+@media (max-width: 600px) {
+    body{
+        margin: 10px;
+    }
+    
+        .searchBox {
+            margin-top: 300px;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        } /* Full width on mobile */
+    
+
+    .cardContainer {
+        display: grid;/* Single column for cards on small screens */
+        
+    }
+}
