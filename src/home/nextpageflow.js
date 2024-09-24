@@ -47,7 +47,7 @@ function NextPageFlow() {
   };
 
   const handleGetStarted = () => {
-    navigate('/start');
+    navigate('/home');
   };
 
   const toggleLanguage = () => {
