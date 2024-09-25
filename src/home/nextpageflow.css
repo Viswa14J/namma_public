@@ -252,8 +252,7 @@ p {
   }
   
   .container:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Change to your desired hover background color */
-    transform: scale(1.05); /* Optional: Scale the slide up on hover */
+    transform: scale(1.05);/* Optional: Scale the slide up on hover */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Box shadow effect */
 }
 

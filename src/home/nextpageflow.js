@@ -24,18 +24,16 @@ function NextPageFlow() {
     {
       title: isTamil ? 'எங்கள் வலைத்தளத்திற்கு வருக' : 'Welcome to Our Website',
       description: isTamil ? 'எங்கள் வலைத்தளம் வீடு கட்டுதல் மற்றும் புதுப்பித்தல் செயல்முறையை எளிதாக்குவதை நோக்கமாகக் கொண்டுள்ளது.' : 'Our website aims to simplify the process of home construction and renovation.',
-      backgroundColor: 'linear-gradient(to right, rgba(67, 206, 162, 0.2), rgba(24, 90, 157, 0.2))',
+      
     },
     {
       title: isTamil ? 'எங்கள் சேவைகளை ஆராயுங்கள்' : 'Explore Our Services',
       description: isTamil ? 'பொறியாளர்கள், பிளம்பர்கள் மற்றும் ஒப்பந்தக்காரர்கள் போன்ற சேவைகள். இணையதளம் மூலம்.' : 'Services such as engineers, plumbers, and contractors. Through a website.',
-      backgroundColor: 'linear-gradient(to right, rgba(67, 206, 162, 0.2), rgba(24, 90, 157, 0.2))',
-    },
+        },
     {
       title: isTamil ? 'வாழ்க்கையைத் தொடங்குங்கள்' : 'Let’s Get Started',
       description: isTamil ? 'இது மூன்றாவது ஸ்லைடாகும்.' : 'This is the third slide.',
-      backgroundColor: 'linear-gradient(to right, rgba(67, 206, 162, 0.2), rgba(24, 90, 157, 0.2))',
-    },
+       },
   ];
 
   const handleNextSlide = () => {
@@ -85,7 +83,7 @@ function NextPageFlow() {
           {isTamil ? 'English' : 'தமிழ்'}
         </button>
 
-        <div className="container" style={{ background: slides[currentSlide].backgroundColor }}>
+        <div className="container" style={{ background: slides[currentSlide].backgroundColor,  backdropFilter: 'blur(10px)' }}>
           {/* Slide Content */}
           <div className="slide-content slide">
             <h1>{slides[currentSlide].title}</h1>

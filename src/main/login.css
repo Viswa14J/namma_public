@@ -146,5 +146,20 @@ h2 {
   
   cursor: pointer;
 }
+.forgot-password {
+  margin-top: 10px;
+}
+
+.forgot-password p {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.reset-message {
+  color: blue;
+  font-size: 14px;
+}
 
 
