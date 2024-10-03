@@ -1,0 +1,45 @@
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure it's above other content */
+  }
+  
+  .modal-content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px; /* Maximum width of the modal */
+    width: 100%; /* Responsive width */
+  }
+  .modal-content p{
+
+    color: black;
+
+  }
+  .close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .close-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  

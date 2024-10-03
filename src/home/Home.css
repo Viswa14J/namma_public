@@ -1,8 +1,10 @@
 /* Home.css */
-body {
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-.container {
+.container5 {
     padding: 20px;
     text-align: center;
     /* Modern gradient */
@@ -13,7 +15,7 @@ body {
 .searchBox {
     padding: 10px;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     width: 80%;
     max-width: 400px;
     border: 1px solid #ccc;
@@ -23,7 +25,7 @@ body {
 .cardContainer {
     display: flex;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
     flex-wrap: wrap; /* This will help with responsiveness */
     justify-content: center;
 }
@@ -46,11 +48,18 @@ body {
     position: relative;
 }
 
-.cardContent {
-    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+.cardContent1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    
     padding: 10px;
     width: 100%;
     text-align: left;
+}
+.cardContent1 h2{
+    color:white;
+}
+.cardContent1 p{
+    color:white;
 }
 
 /* Add hover effect for cards */
@@ -58,9 +67,6 @@ body {
     transform: scale(1.05); /* Slightly scale up the card on hover */
 }
 @media (max-width: 600px) {
-    body{
-        margin: 10px;
-    }
     
         .searchBox {
             margin-top: 300px;
