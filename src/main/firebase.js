@@ -4,13 +4,13 @@ import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAvQNrhYMHQH8q0W5X_S4SEyW5Wfd1bwaQ",
-  authDomain: "nammaveedu-official.firebaseapp.com",
-  projectId: "nammaveedu-official",
-  storageBucket: "nammaveedu-official.appspot.com",
-  messagingSenderId: "216086408380",
-  appId: "1:216086408380:web:a9f10ea241ac72cf7af4b9",
-  measurementId: "G-D3BZH4ZG01"
+  apiKey: "xxx",
+  authDomain: "yyy",
+  projectId: "xxx",
+  storageBucket: "yyy",
+  messagingSenderId: "xxx",
+  appId: "yyy",
+  measurementId: "xxx"
 };
 
 // Initialize Firebase
